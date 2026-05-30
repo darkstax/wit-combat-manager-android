@@ -1,0 +1,14 @@
+# Build
+app/build/
+build/
+.gradle/
+.kotlin/
+*.apk
+*.aab
+
+# IDE
+.idea/
+*.iml
+
+# Local
+local.properties
