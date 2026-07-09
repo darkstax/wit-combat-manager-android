@@ -2,6 +2,20 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## 知识图谱（code-review-graph）
+
+**本项目已配备代码知识图谱。探索代码时优先使用 MCP 工具。**
+
+| 需求 | 使用 |
+|------|------|
+| 理解整体架构 | `get_architecture_overview` |
+| 查找函数/类 | `semantic_search_nodes` |
+| 追踪调用关系 | `query_graph` (callers_of / callees_of) |
+| 代码审查 | `detect_changes` + `get_review_context` |
+| 影响分析 | `get_impact_radius` + `get_affected_flows` |
+
+图谱覆盖：13 文件 / 116 节点 / 1423 边 / 32 执行流。仅在图谱未覆盖时才回退到 Grep/Glob/Read。
+
 ## 项目概述
 
 WIT 战斗管理器 — Kotlin/Compose Android 原生移植版，替代 Python/Kivy 版本。
